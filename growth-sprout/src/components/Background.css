@@ -31,3 +31,11 @@
   margin-top: -150px;
   border-radius: 50%;
 }
+
+.banner-text p {
+  color: rgb(2, 56, 33);
+  font-size: 35px;
+  font: Comic Sans;
+  padding: 25px 50px 75px;
+  line-height: 100%;
+}
