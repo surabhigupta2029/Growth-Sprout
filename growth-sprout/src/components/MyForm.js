@@ -20,9 +20,9 @@ export default class MyForm extends React.Component {
     alert(
       "The information you provided state: " +
         this.state.USstate +
-        " city: " +
+        ", city: " +
         this.state.city +
-        " zipcode: " +
+        ", zipcode: " +
         this.state.zipcode
     );
   };
