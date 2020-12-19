@@ -1,0 +1,31 @@
+.location-form{
+    background-color: rgb(4, 102, 1);
+    width: 100%;
+    padding: 40px;
+    color: white;
+    text-align: center;
+    font-size: 1.5rem;
+    font-weight: bold;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+.per-row {
+    margin-top: 1.5%;
+}
+
+.sub-but {
+    border-radius: 8px;
+    width: 150px;
+}
+
+.sub-but:hover {
+    background-color:rgb(133, 197, 127);
+}
+
+.input-bar {
+    border-radius: 6px;
+    width: 450px;
+}
+
+.form-label {
+    font-size: 2.5rem !important;
+}
