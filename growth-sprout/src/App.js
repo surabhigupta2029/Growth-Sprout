@@ -14,7 +14,9 @@ function App() {
       </Switch>
     </Router> */}
     <Background/>
-    <div className = "Background" />
+    <div className="under-logo">
+
+    </div>
     </>
   );
 }
