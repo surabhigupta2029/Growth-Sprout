@@ -32,10 +32,19 @@
   border-radius: 50%;
 }
 
-.banner-text p {
+.banner-text {
   color: rgb(2, 56, 33);
   font-size: 35px;
-  font: Comic Sans;
-  padding: 25px 50px 75px;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  padding: 40px;
   line-height: 100%;
+  background: rgb(133, 197, 127);
+  border-radius: 8px;
+  text-align: center;
+  height: auto;
+  margin: 2%;
+}
+
+.enter-location {
+  font-weight: bold;
 }
