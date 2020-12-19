@@ -1,6 +1,7 @@
-import React, { useEffect, useState } from "react";
-import "./App.css";
-import Background from "./components/Background";
+import React from 'react'
+import './App.css';
+import Background from './components/Background';
+import MyForm from './components/MyForm';
 // import Navbar from './components/Navbar';
 // import {BrowserRouter as Router, Switch, Route} from 'react-router-dom';
 
@@ -13,8 +14,10 @@ function App() {
         <Route path='/' exact/>
       </Switch>
     </Router> */}
-      <Background />
-      <div className="under-logo"></div>
+    <Background/>
+    <div className="under-logo">
+    <MyForm/>
+    </div>
     </>
   );
 }
