@@ -1,0 +1,28 @@
+.plant-image {
+  width: 150px;
+}
+
+.plant-title {
+  font-size: 1.5rem;
+  font-weight: bold;
+}
+
+.science-title {
+  font-size: 1rem;
+  font-style: italic;
+}
+
+.plants-box {
+  width: 100%;
+  background-color: skyblue;
+  margin: 2%;
+}
+
+.slide-con {
+  margin: 3%;
+  padding: 25px;
+  text-align: center;
+  background-color: #acbbc4;
+  border-radius: 8px;
+  margin-bottom: 3%;
+}

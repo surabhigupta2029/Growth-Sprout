@@ -1,45 +1,36 @@
-import React, { Component } from "react";
-import { Container, Grid, Header, List } from "semantic-ui-react";
-//import contacts from './test';
+import React from "react";
 
-// fetch(`${fileName}.json`)
-//   .then(response => response.json())
-//   .then(data => console.log(data))
+import "./DisplayJson.css";
+import "react-slideshow-image/dist/styles.css";
+import { Slide } from "react-slideshow-image";
 
-var data = require('./test.json');
-//console.log(data)
-//console.log(data.elements.common_name)
+var data = require("./test.json");
+
 export default class DisplayJson extends React.Component {
-
-
-  // function printJson =>{
-  //   console.log(data)
-
-  //   for (var i = 0; i < data.length; i++) {
-  //     var obj = data[i];
-  //     console.log(`Name: ${obj.common_name}, ${obj.scientific_name}`);
-  //   }
-  //   }
+  constructor(props) {
+    super(props);
+    this.state = {};
+  }
   render() {
-    let plants = data.elements.map((plant) => {
+    let plants = data.elements.map(plant => {
       return (
-        <div>
-          <li>
-            <h1>{plant.common_name}</h1>
-            {console.log(plant.common_name)}
-            <p>{plant.scientific_name}</p>
-            <img alt="pic" src={plant.image} />
-          </li>
+        <div className="each-slide">
+          <div>
+            <img className="plant-image" alt="pic" src={plant.image}></img>
+            <br></br>
+            <span className="plant-title">{plant.common_name}</span>
+            <br></br>
+            <span className="science-title">{plant.scientific_name}</span>
+          </div>
         </div>
       );
-    })
+    });
+
     return (
-      <div>
-        <ul>
-          {plants}
-        </ul>
+      <div className="slide-container slide-con">
+        <h1>Best Plants For Your Location</h1>
+        <Slide>{plants}</Slide>
       </div>
     );
   }
 }
-
