@@ -2,6 +2,13 @@ import React from "react";
 import { Container, Row, Col } from "reactstrap";
 import "./MyForm.css";
 
+var submitted = false;
+
+// export function checkSubmit() 
+// {
+//   return submitted;
+// }
+
 export default class MyForm extends React.Component {
   constructor(props) {
     super(props);
@@ -11,11 +18,14 @@ export default class MyForm extends React.Component {
       zipcode: null
     };
   }
+
+
   mySubmitHandler = event => {
     event.preventDefault();
     let zipcode = this.state.zipcode;
+    submitted = true;
     if (!Number(zipcode)) {
-      alert("Your zipcode must be a number");
+      alert("Your zipcode must be a number.");
     }
     alert(
       "The information you provided state: " +
@@ -26,6 +36,7 @@ export default class MyForm extends React.Component {
         this.state.zipcode
     );
   };
+
   myChangeHandler = event => {
     let nam = event.target.name;
     let val = event.target.value;
@@ -33,7 +44,7 @@ export default class MyForm extends React.Component {
   };
   render() {
     return (
-      <div className="location-form">
+      <div  className="location-form">
         <Container>
           <form onSubmit={this.mySubmitHandler}>
             <Row>
